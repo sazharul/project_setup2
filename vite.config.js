@@ -11,5 +11,12 @@ export default defineConfig({
     server: {
         port: 8080,
         hot: true
+    },
+    build: {
+        outDir: path.resolve(__dirname, 'dist'),  // Specify the output directory as 'dist'
+        emptyOutDir: true,  // Ensure the 'dist' directory is cleaned before each build
+        rollupOptions: {
+            input: path.resolve(__dirname, 'src', 'index.html')  // Specify the entry point (if needed)
+        }
     }
 });
