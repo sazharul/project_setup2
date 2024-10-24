@@ -91,9 +91,14 @@
                 font-size: 1.75rem; // Further reduce heading size
             }
         }
-
         .features_list {
-            gap: 10px; // Smaller gap on small screens
+            flex-direction: column; /* Stack items vertically */
+            align-items: stretch; /* Ensures items take full width */
+
+            .features {
+                width: 100%; /* Make each item take full width */
+                margin-bottom: 10px; /* Add space between items if needed */
+            }
         }
     }
 
@@ -110,6 +115,7 @@
         }
     }
 }
+
 /***********************************************************************
     * 2. security_ensure end
 ***********************************************************************/
