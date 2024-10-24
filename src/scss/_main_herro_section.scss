@@ -3,11 +3,14 @@
 ***********************************************************************/
 
 // SCSS styles with rem units and color variables
+.mobile_menu_section {
+    display: none;
+}
+
 .main_herro_section {
     background: url('/asset/image/hero-bg.jpg') no-repeat center center;
     padding: 0 1.25rem; // 20px to rem
     margin-bottom: 1.25rem;
-    overflow: hidden;
 
     .nav_bar {
         width: 100%;
@@ -131,7 +134,7 @@
             width: 100%;
             top: 0;
             text-align: center;
-            z-index: 2;
+            z-index: 0;
 
             img {
                 display: inline-block;
@@ -185,7 +188,7 @@
 
             h3 {
                 font-family: Orbitron;
-                font-size: 4rem; // 64px to rem
+                font-size: 3.3rem; // 64px to rem
                 font-weight: 400;
                 line-height: 3.802rem; // 60.83px to rem
                 text-align: left;
@@ -201,7 +204,7 @@
 
             h3 {
                 font-family: Orbitron;
-                font-size: 4rem; // 64px to rem
+                font-size: 3.3rem; // 64px to rem
                 font-weight: 400;
                 line-height: 3.802rem; // 60.83px to rem
                 text-align: right;
@@ -249,13 +252,22 @@
         }
 
         .herro_sub_section {
-            h3 {
-                font-size: 3rem; // Decrease font size for large tablets
+            .left_content {
+                h3 {
+                    font-size: 2.5rem; // Decrease font size for large tablets
+                }
+            }
+            .right_content {
+                h3 {
+                    font-size: 2.5rem; // Decrease font size for large tablets
+                }
             }
         }
     }
 
     @media (max-width: $breakpoint-md) {
+        overflow: hidden;
+
         .nav_bar {
             display: inline-block;
             width: auto;
@@ -317,6 +329,7 @@
             }
 
             .mobile_menu_section {
+                display: inline-block;
                 position: fixed;
                 left: 0;
                 right: 0;
@@ -497,6 +510,7 @@
                     font-size: 2.1rem; // Smaller heading for tablets
                 }
             }
+
             .right_content {
                 width: 100%;
 
