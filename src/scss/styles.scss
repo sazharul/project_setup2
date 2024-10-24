@@ -2,6 +2,11 @@ body {
     background: #130F0F;
 }
 
+body.no-scroll {
+    overflow: hidden; // Disables scrolling
+}
+
+
 section {
     overflow-x: hidden;
 }
