@@ -21,10 +21,6 @@ body.no-scroll {
     margin-bottom: 70px;
 
     .left_aggregator_content {
-        @media screen and (min-width: 1400px) {
-            min-height: 440px;
-        }
-
         h3 {
             font-family: Orbitron;
             font-size: 40px;
@@ -70,7 +66,7 @@ body.no-scroll {
             }
         }
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 991px) {
             .content_lists {
                 flex-direction: column; /* Stack items vertically */
                 align-items: stretch; /* Ensures items take full width */
@@ -84,41 +80,22 @@ body.no-scroll {
     }
 
     .right_aggregator_content {
-        display: inline-block;
+        display: flex; /* Use flexbox to center content */
+        justify-content: center; /* Horizontally center the image */
+        align-items: center; /* Vertically center the image */
         width: 100%;
-        position: relative;
-
-        @media screen and (max-width: 768px) {
-            min-height: 350px;
-        }
-
-        @media screen and (max-width: 576px) {
-            min-height: 230px;
-        }
-
+        height: 100%;
+        padding: 20px;
 
         img {
-            position: absolute;
-            top: -180px;
-            display: inline-block;
-            width: 100%;
-
-            @media screen and (max-width: 1200px) {
-                top: -70px;
-            }
-
-            @media screen and (max-width: 991px) {
-                top: -0px;
-            }
-
-            @media screen and (max-width: 768px) {
-                top: -70px;
-            }
+            display: block; /* Set image to block to avoid extra space */
+            max-width: 100%; /* Ensure the image scales properly */
+            height: auto; /* Maintain aspect ratio */
         }
     }
 
     .border_bottom {
-        padding: 40px 0px;
+        padding: 25px 0px;
         border-bottom: 1px solid rgba(173, 1, 1, 1);
     }
 }
@@ -249,29 +226,22 @@ body.no-scroll {
     }
 
     .right_stealth_address_system_content {
-        display: inline-block;
+        display: flex; /* Use flexbox to center content */
+        justify-content: center; /* Horizontally center the image */
+        align-items: center; /* Vertically center the image */
         width: 100%;
-        position: relative;
-
-        @media screen and (max-width: 768px) {
-            min-height: 230px;
-        }
+        height: 100%;
+        padding: 20px;
 
         img {
-            position: absolute;
-            top: -170px;
-            display: inline-block;
-            width: 100%;
-
-            @media screen and (max-width: 768px) {
-                top: -90px;
-            }
-
+            display: block; /* Set image to block to avoid extra space */
+            max-width: 100%; /* Ensure the image scales properly */
+            height: auto; /* Maintain aspect ratio */
         }
     }
 
     .border_bottom {
-        padding: 40px 0px;
+        padding: 25px 0px;
         border-bottom: 1px solid rgba(173, 1, 1, 1);
     }
 }
@@ -320,30 +290,22 @@ body.no-scroll {
     }
 
     .right_myst_dex_bot {
-        display: inline-block;
+        display: flex; /* Use flexbox to center content */
+        justify-content: center; /* Horizontally center the image */
+        align-items: center; /* Vertically center the image */
         width: 100%;
-        position: relative;
-
-        @media screen and (max-width: 768px) {
-            min-height: 290px;
-        }
-
+        height: 100%;
+        padding: 20px;
 
         img {
-            position: absolute;
-            top: -170px;
-            display: inline-block;
-            width: 100%;
-
-            @media screen and (max-width: 768px) {
-                top: -40px;
-            }
-
+            display: block; /* Set image to block to avoid extra space */
+            max-width: 100%; /* Ensure the image scales properly */
+            height: auto; /* Maintain aspect ratio */
         }
     }
 
     .border_bottom {
-        padding: 40px 0px;
+        padding: 25px 0px;
         border-bottom: 1px solid rgba(173, 1, 1, 1);
     }
 }
